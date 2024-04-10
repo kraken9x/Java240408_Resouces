@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./android-chrome-192x192.png" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Form Đăng Ký</h3>
+    <form action="http://www.google.com" method="GET">
+      <div>
+        <label for="username"> Tên Đăng Nhập </label>
+        <br />
+        <input id="username" type="text" name="username" />
+      </div>
+      <div>
+        <label for="password"> Mật Khẩu </label>
+        <br />
+        <input id="password" type="password" name="password" />
+      </div>
+      <div>
+        <label for=""> Tuổi </label>
+        <br />
+        <input type="number" name="age" />
+      </div>
+      <div>
+        <label for=""> Email </label>
+        <br />
+        <input type="email" name="email" />
+      </div>
+      <div>
+        <label for=""> Màu da </label>
+        <br />
+        <input type="color" name="skinColor" />
+      </div>
+      <div>
+        <label for=""> Ngày sinh </label>
+        <br />
+        <input type="date" name="dob" />
+      </div>
+      <div>
+        <label for=""> Ngày sinh + Giờ sinh </label>
+        <br />
+        <input type="datetime-local" name="dobTime" />
+      </div>
+      <div>
+        <label for=""> BMI </label>
+        <br />
+        <input type="range" name="bmi" />
+      </div>
+      <div>
+        <label for=""> Ghi chú </label>
+        <br />
+        <textarea cols="30" rows="10" name="note"></textarea>
+      </div>
+      <div>
+        <label for=""> Vui lòng chọn giới tính </label>
+        <br />
+        <input type="radio" name="gender" value="male" />
+        <label for="">Male</label>
+        <br />
+        <input type="radio" name="gender" value="female" />
+        <label for="">Femail</label>
+        <br />
+        <input type="radio" name="gender" value="lgbt" />
+        <label for="">LGBT</label>
+      </div>
+      <div>
+        <input type="checkbox" />
+        <label for=""> Bạn có đồng ý với điều khoản đăng ký không </label>
+      </div>
+      <div>
+        <label for=""> Sở thích </label>
+        <select name="hobby">
+          <option value="reading book">Đọc sách</option>
+          <option value="listening to music">Nghe nhạc</option>
+          <option value="rapping">Rapper</option>
+        </select>
+      </div>
+      <div>
+        <input type="button" value="Đăng Ký" />
+        <button>Submit</button>
+        <input type="reset" />
+      </div>
+    </form>
+  </body>
+</html>
