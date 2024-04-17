@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #231651;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* ----------- NAVBAR CSS ----------- */
+
+.navbar {
+  padding: 20px 150px;
+  box-shadow: 0px 1px 5px 0px #797979bf;
+}
+
+.navbar .main-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-nav-container .logo img {
+  max-height: 70px;
+}
+
+.navbar .main-nav-container .main-nav {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.navbar .main-nav-container .language {
+  border: 1px solid #efedf5;
+  background-color: #f8f7fa;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.navbar .main-nav-container .menu {
+  border: 1px solid #efedf5;
+  background-color: #f8f7fa;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  /* 
+  Mất Menu WEB
+  Hiển Thị Menu Hamburger */
+  .navbar {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .navbar .main-nav-container .menu {
+    display: inline;
+    /* display: inline; */
+  }
+  .navbar .main-nav-container .main-nav {
+    display: none;
+  }
+  .navbar .main-nav-container .language {
+    display: none;
+  }
+}
+
+/* ----------- HERO_SECTION CSS ----------- */
+.banner-section {
+  display: flex;
+  padding: 20px 150px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background-image: url(https://rikkei.edu.vn/wp-content/uploads/2024/01/bg-home1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner-section .hero-section {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 530px;
+}
+
+.banner-section img {
+  max-width: 600px;
+}
+
+.banner-section .hero-section h1 {
+  margin-bottom: 25px;
+}
+
+.banner-section .hero-section ul {
+  margin-bottom: 25px;
+}
+
+.banner-section .hero-section ul > li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.banner-section .hero-section ul > li::before {
+  content: "";
+  display: block;
+  background-image: url(https://rikkei.edu.vn/wp-content/themes/hoabinhweb-v3-154-child-theme/image/icon-check.png);
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-section .hero-section .btn-group button {
+  padding: 13px 25px;
+  background-color: #bc2229;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.banner-section .hero-section-mobile h1 {
+  margin-bottom: 25px;
+}
+
+.banner-section .hero-section-mobile ul {
+  margin-bottom: 25px;
+}
+
+.banner-section .hero-section-mobile ul > li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.banner-section .hero-section-mobile ul > li::before {
+  content: "";
+  display: block;
+  background-image: url(https://rikkei.edu.vn/wp-content/themes/hoabinhweb-v3-154-child-theme/image/icon-check.png);
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-section .hero-section-mobile .btn-group button {
+  padding: 13px 25px;
+  background-color: #bc2229;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.banner-section .hero-section-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  /* 
+    Biến đổi layout của banner section
+    1 dòng 2 phần tử
+    ->
+    1 dòng 1 phần tử
+    ---> Thay đổi hướng của flex-direction   
+  */
+
+  .banner-section {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .banner-section .layout-content {
+    display: none;
+  }
+
+  .banner-section .hero-section {
+    display: none;
+  }
+  .banner-section .hero-section-mobile {
+    display: block;
+  }
+
+  .banner-section img {
+    max-width: 100%;
+  }
+}
+
+/* -----------CONTENT BOX----------- */
+.content-box {
+  /* display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 150px; */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  padding: 20px 150px;
+  position: absolute;
+  top: 610px;
+}
+.content-box .box {
+  text-align: center;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 5px;
+  padding: 15px 25px;
+  background-color: white;
+}
+.box-text h2 {
+  color: #bc2229;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+  .content-box {
+    padding: 20px;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content-box {
+    grid-template-columns: auto;
+  }
+}
