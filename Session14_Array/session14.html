@@ -4,9 +4,481 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
+
   <body>
-    <h1>Array - Mảng</h1>
-    <script src="./session14.js"></script>
+    <main id="apps">
+      <header class="header">
+        <div class="grid wide">
+          <div class="h_wrapper">
+            <a href="/" class="h_logo">
+              <div class="header_logo-img"></div>
+            </a>
+            <div class="h-menu h_menu-icon">
+              <ion-icon name="grid-outline"></ion-icon>
+            </div>
+            <nav class="h_nav h_mobile-nav">
+              <ul class="h_list">
+                <li class="h_item">
+                  <a href class="h_link">Home</a>
+                </li>
+                <li class="h_item">
+                  <a href class="h_link">About</a>
+                </li>
+                <li class="h_item">
+                  <a href class="h_link">Tech Stack</a>
+                </li>
+                <li class="h_item">
+                  <a href class="h_link">Projects</a>
+                </li>
+                <li class="h_item">
+                  <a href class="h_link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="h_icon h_mobile-icon">
+              <a href="" class="h_icon-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <a href="" class="h_icon-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="" class="h_icon-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="banner app_content">
+        <div class="grid wide">
+          <div class="row sm-gutter banner_content">
+            <div class="col l-6 m-6 c-12">
+              <div class="banner_group">
+                <div class="banner_head">
+                  Hi
+                  <div class="banner_head-img">👋</div>
+                  ,
+                </div>
+                <div class="banner_head">My name is</div>
+                <div class="banner_head blue">Nguyễn Trường Sơn</div>
+                <div class="banner_head">I build things for web</div>
+              </div>
+            </div>
+            <div class="col l-6 m-6 c-12">
+              <div class="banner_icon-img">
+                <div class="banner_img"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Tech app_content">
+        <div class="grid wide">
+          <div class="tech_content">
+            <h1 class="tech_heading">My Tech Stack</h1>
+            <p class="tech_desc">
+              Technologies I've been working with recently
+            </p>
+          </div>
+          <div class="tech_wrapper">
+            <div class="row sm-gutter">
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/cib_greensock.png)"
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/icons/html5.png)"
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/icons/css.png)"
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/icons/js.png)"
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/icons/react.png)"
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/icons/vue.svg)"
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/icons/bootstrap.svg)"
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/icons/ngã.png)"
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/icons/logos_sass.png)"
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/icons/vs.png)"
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="
+                      background-image: url(/imgs/icons/logos_git-icon.png);
+                    "
+                  ></div>
+                </a>
+              </div>
+              <div class="col l-2 m-4 c-4">
+                <a href="" class="tech_icon-link">
+                  <div
+                    class="tech_icon-img"
+                    style="background-image: url(/imgs/icons/nodejs-icon.svg)"
+                  ></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects app_content">
+        <div class="grid wide">
+          <div class="projects_title">
+            <h1 class="projects_head">Projects</h1>
+            <p class="project_desc">Things I've built so far</p>
+          </div>
+          <div class="projects_product">
+            <div class="row sm-gutter">
+              <div class="col l-4">
+                <a href="" class="projects_item">
+                  <div class="projects_wrap">
+                    <div
+                      class="projects_img"
+                      style="background-image: url(/imgs/item01.jpg)"
+                    ></div>
+                    <div class="projects_inner">
+                      <h4 class="projects_inner_head">
+                        Project Tile goes here
+                      </h4>
+                      <p class="projects_inner-desc">
+                        This is sample project description random things are
+                        here in description This is sample project lorem ipsum
+                        generator for dummy content
+                      </p>
+                      <p class="projects_inner-desc">
+                        Tech stack : <span>HTML , JavaScript, SASS, React</span>
+                      </p>
+                      <div class="projects_inner-footer">
+                        <span class="projects_span">
+                          <ion-icon name="link-outline"></ion-icon>
+                          <span class="active">live Preview</span>
+                        </span>
+                        <span class="projects_span">
+                          <ion-icon name="logo-github"></ion-icon>
+                          <span class="active">View codes</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-4">
+                <a href="" class="projects_item">
+                  <div class="projects_wrap">
+                    <div
+                      class="projects_img"
+                      style="background-image: url(/imgs/item11.jpg)"
+                    ></div>
+                    <div class="projects_inner">
+                      <h4 class="projects_inner_head">
+                        Project Tile goes here
+                      </h4>
+                      <p class="projects_inner-desc">
+                        This is sample project description random things are
+                        here in description This is sample project lorem ipsum
+                        generator for dummy content
+                      </p>
+                      <p class="projects_inner-desc">
+                        Tech stack : <span>HTML , JavaScript, SASS, React</span>
+                      </p>
+                      <div class="projects_inner-footer">
+                        <span class="projects_span">
+                          <ion-icon name="link-outline"></ion-icon>
+                          live Preview
+                        </span>
+                        <span class="projects_span">
+                          <ion-icon name="logo-github"></ion-icon>
+                          View codes
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-4">
+                <a href="" class="projects_item">
+                  <div class="projects_wrap">
+                    <div
+                      class="projects_img"
+                      style="background-image: url(/imgs/item12.jpg)"
+                    ></div>
+                    <div class="projects_inner">
+                      <h4 class="projects_inner_head">
+                        Project Tile goes here
+                      </h4>
+                      <p class="projects_inner-desc">
+                        This is sample project description random things are
+                        here in description This is sample project lorem ipsum
+                        generator for dummy content
+                      </p>
+                      <p class="projects_inner-desc">
+                        Tech stack : <span>HTML , JavaScript, SASS, React</span>
+                      </p>
+                      <div class="projects_inner-footer">
+                        <span class="projects_span">
+                          <ion-icon name="link-outline"></ion-icon>
+                          <span class="active"> live Preview </span>
+                        </span>
+                        <span class="projects_span">
+                          <ion-icon name="logo-github"></ion-icon>
+                          <span class="active"> View codes </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-4">
+                <a href="" class="projects_item">
+                  <div class="projects_wrap">
+                    <div
+                      class="projects_img"
+                      style="background-image: url(/imgs/item13.jpg)"
+                    ></div>
+                    <div class="projects_inner">
+                      <h4 class="projects_inner_head">
+                        Project Tile goes here
+                      </h4>
+                      <p class="projects_inner-desc">
+                        This is sample project description random things are
+                        here in description This is sample project lorem ipsum
+                        generator for dummy content
+                      </p>
+                      <p class="projects_inner-desc">
+                        Tech stack : <span>HTML , JavaScript, SASS, React</span>
+                      </p>
+                      <div class="projects_inner-footer">
+                        <span class="projects_span">
+                          <ion-icon name="link-outline"></ion-icon>
+                          live Preview
+                        </span>
+                        <span class="projects_span">
+                          <ion-icon name="logo-github"></ion-icon>
+                          View codes
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-4">
+                <a href="" class="projects_item">
+                  <div class="projects_wrap">
+                    <div
+                      class="projects_img"
+                      style="background-image: url(/imgs/item14.jpg)"
+                    ></div>
+                    <div class="projects_inner">
+                      <h4 class="projects_inner_head">
+                        Project Tile goes here
+                      </h4>
+                      <p class="projects_inner-desc">
+                        This is sample project description random things are
+                        here in description This is sample project lorem ipsum
+                        generator for dummy content
+                      </p>
+                      <p class="projects_inner-desc">
+                        Tech stack : <span>HTML , JavaScript, SASS, React</span>
+                      </p>
+                      <div class="projects_inner-footer">
+                        <span class="projects_span">
+                          <ion-icon name="link-outline"></ion-icon>
+                          <span class="active"> live Preview </span>
+                        </span>
+                        <span class="projects_span">
+                          <ion-icon name="logo-github"></ion-icon>
+                          <span class="active"> View codes </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-4">
+                <a href="" class="projects_item">
+                  <div class="projects_wrap">
+                    <div
+                      class="projects_img"
+                      style="background-image: url(/imgs/item15.jpg)"
+                    ></div>
+                    <div class="projects_inner">
+                      <h4 class="projects_inner_head">
+                        Project Tile goes here
+                      </h4>
+                      <p class="projects_inner-desc">
+                        This is sample project description random things are
+                        here in description This is sample project lorem ipsum
+                        generator for dummy content
+                      </p>
+                      <p class="projects_inner-desc">
+                        Tech stack : <span>HTML , JavaScript, SASS, React</span>
+                      </p>
+                      <div class="projects_inner-footer">
+                        <span class="projects_span">
+                          <ion-icon name="link-outline"></ion-icon>
+                          live Preview
+                        </span>
+                        <span class="projects_span">
+                          <ion-icon name="logo-github"></ion-icon>
+                          Code views
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer app_content">
+        <div class="grid wide">
+          <div class="f_wrapper">
+            <a href="/" class="f_logo">
+              <div class="f_logo-img"></div>
+            </a>
+            <div class="h-menu h_menu-icon">
+              <ion-icon name="grid-outline"></ion-icon>
+            </div>
+            <nav class="f_nav f_mobile-nav">
+              <ul class="f_list">
+                <li class="f_item">
+                  <a href class="f_link">+91 12345 09876</a>
+                </li>
+                <li class="f_item">
+                  <a href class="f_link">info@example.com</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="f_icon f_mobile-icon">
+              <a href="" class="f_icon-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <a href="" class="f_icon-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="" class="f_icon-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <section class="f_botom app_content">
+        <div class="grid wide">
+          <div class="row sm-gutter">
+            <div class="col l-6 m-6 c-12">
+              <nav class="f_bottom_nav f_mobile_bottom_nav">
+                <ul class="f_bottom-list">
+                  <li class="f_bottom-item">
+                    <a href="" class="f_bottom-link">Home</a>
+                  </li>
+                  <li class="f_bottom-item">
+                    <a href="" class="f_bottom-link">About</a>
+                  </li>
+                  <li class="f_bottom-item">
+                    <a href="" class="f_bottom-link">Technologies</a>
+                  </li>
+                  <li class="f_bottom-item">
+                    <a href="" class="f_bottom-link">Projects</a>
+                  </li>
+                  <li class="f_bottom-item">
+                    <a href="" class="f_bottom-link">Conact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col l-6 m-6 c-12">
+              <div class="f_bottom-right f_mobile_bottom_right">
+                Designed and built by <span class="blue">Pavan MG</span> with
+                <span class="blue">Love</span> &
+                <span class="blue">Coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
