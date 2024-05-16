@@ -138,29 +138,95 @@
 // console.log(spans);
 
 // .querySelector(selector)
-let b = document.querySelector("b#special-prize.list-item");
-console.dir(b);
+// let b = document.querySelector("b#special-prize.list-item");
+// console.dir(b);
 
-console.log(b.innerText);
-console.log(b.textContent);
-console.log(b.innerHTML);
+// console.log(b.innerText);
+// console.log(b.textContent);
+// console.log(b.innerHTML);
 
-b.innerText = "Hello world";
-b.textContent = "Text content";
-b.innerHTML = `<i>
-                    <u>INNER HTML</u>
-                </i>`;
+// b.innerText = "Hello world";
+// b.textContent = "Text content";
+// b.innerHTML = `<i>
+//                     <u>INNER HTML</u>
+//                 </i>`;
 
 // .style
 
-b.style.fontSize = "20px";
-b.style.display = "block";
-b.style.width = "300px";
-b.style.height = "300px";
-b.style.backgroundColor = "pink";
-b.style.color = "black";
-b.style.textAlign = "center";
-b.style.lineHeight = "300px";
-b.style.borderRadius = "50%";
+// b.style.fontSize = "20px";
+// b.style.display = "block";
+// b.style.width = "300px";
+// b.style.height = "300px";
+// b.style.backgroundColor = "pink";
+// b.style.color = "black";
+// b.style.textAlign = "center";
+// b.style.lineHeight = "300px";
+// b.style.borderRadius = "50%";
 
 // .classList
+let b = document.querySelector("b#special-prize.list-item");
+
+// console.log(b.classList);
+
+// b.classList.add("cuong-dz");
+// console.log(b.classList);
+
+// b.classList.remove("custom-class");
+// console.log(b.classList);
+
+// b.classList.add("round-pink");
+
+// TRONG TƯƠNG LAI
+
+// b.classList.remove("round-pink");
+
+// console.log(b.id);
+
+// console.log(b.getAttribute("id")); // special-prize
+
+// console.log(b.getAttribute("class")); // list-item custom-class
+
+// b.setAttribute("class", "hihihihihihi");
+
+// img
+// img.getAttribute("src")
+// img.getAttribute("alt")
+
+// let li = document.createElement("li"); // li
+// console.log(li);
+
+// li.innerHTML = "Liên hoan fim Cannes";
+// li.classList.add("list-item");
+
+// console.log(li);
+
+// let ul = document.getElementsByTagName("ul")[0]; // [ul] -> ul
+// console.log(ul);
+
+// ul.appendChild(li);
+
+// b.remove();
+// li.remove();
+// ul.remove();
+
+// console.log(b.children[0].parentElement.parentElement.children[2]);
+
+let btn = document.getElementById("btn");
+
+// Mỗi lần click vào btn, đổi màu của thẻ b thành hồng
+// ấn lại lần nữa, quay về màu cũ
+
+// Mỗi lần click vào btn, thẻ b biến mất rồi lại hiện ra
+btn.onclick = function () {
+  //   alert("Hello world");
+  //   if (b.style.color !== "pink") {
+  //     b.style.color = "pink";
+  //   } else {
+  //     b.style.color = "";
+  //   }
+  if (b.style.display !== "none") {
+    b.style.display = "none";
+  } else {
+    b.style.display = "block";
+  }
+};
