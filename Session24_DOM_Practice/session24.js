@@ -62,23 +62,7 @@
 //   console.log("Hello world");
 // };
 
-let todoList = [
-  {
-    id: 1,
-    content: "Hit the gym",
-    status: false,
-  },
-  {
-    id: 2,
-    content: "Pay bills",
-    status: true,
-  },
-  {
-    id: 3,
-    content: "Meet George",
-    status: false,
-  },
-];
+let todoList = JSON.parse(localStorage.getItem("todoList")); // [{}, {}, {}]
 
 let ul = document.getElementById("myUL");
 let addBtn = document.getElementsByClassName("addBtn")[0];
@@ -152,7 +136,8 @@ addBtn.onclick = function () {
     status: false,
   };
   // Lưu đối tượng đó vào trong CSDL
-  todoList.push(newTodo);
+  todoList.push(newTodo); // [{}, {}, {}, {}]
+  localStorage.setItem("todoList", JSON.stringify(todoList));
   // Phản ánh sự thay đổi của CSDL lên trên trình duyệt
   render();
 };
@@ -172,8 +157,9 @@ ul.onclick = function (event) {
       return el.id === +id;
     });
 
-    todoList[findIndex].status = !todoList[findIndex].status;
+    todoList[findIndex].status = !todoList[findIndex].status; // [{}, {}, {status: false}]
 
+    localStorage.setItem("todoList", JSON.stringify(todoList));
     render();
   }
 };
